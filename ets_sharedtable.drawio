@@ -1,1 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2022-12-01T03:40:49.147Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" version="20.5.3" etag="san9HOGcvUlxVpG125Ai" type="github"><diagram id="d86L8YWPN2AkIKd9NH52">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-01T04:01:47.751Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ne_9QLdesw7NcfB_Y2V2" version="20.5.3" type="github">
+  <diagram id="d86L8YWPN2AkIKd9NH52" name="第 1 页">
+    <mxGraphModel dx="1777" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-1" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;space_ets_datas&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;dashed=1;strokeWidth=2;labelPosition=left;verticalLabelPosition=top;verticalAlign=bottom;horizontal=1;fontColor=default;labelBackgroundColor=none;labelBorderColor=none;spacingTop=11;spacingBottom=1;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-3" value="Npc.py" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="235" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-4" value="Door.py" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-6" value="xxx.py" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="140" y="252.5" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-8" value="DataManager" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontColor=default;align=right;labelPosition=left;verticalLabelPosition=top;verticalAlign=bottom;spacingLeft=10;spacing=2;spacingTop=11;spacingRight=-65;" vertex="1" parent="1">
+          <mxGeometry x="430" y="200" width="260" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-10" value="cache_space_entity_config" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="450" y="235" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-13" value="起服生成" style="shape=singleArrow;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontSize=16;fontColor=default;fillStyle=auto;gradientColor=none;verticalAlign=bottom;horizontal=1;labelPosition=center;verticalLabelPosition=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="240" y="252.5" width="170" height="25.62" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-14" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;space_ets_datas&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;dashed=1;strokeWidth=2;labelPosition=left;verticalLabelPosition=top;verticalAlign=bottom;horizontal=1;fontColor=default;labelBackgroundColor=none;labelBorderColor=none;spacingTop=11;spacingBottom=1;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="36" y="404" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-15" value="Npc.py" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="46" y="439" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-16" value="Door.py" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="46" y="484" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-17" value="xxx.py" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="136" y="456.5" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-18" value="DataManager" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontColor=default;align=right;labelPosition=left;verticalLabelPosition=top;verticalAlign=bottom;spacingLeft=10;spacing=2;spacingTop=11;spacingRight=-65;" vertex="1" parent="1">
+          <mxGeometry x="426" y="404" width="260" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-19" value="SharedTable::load" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="446" y="439" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-21" value="all_space_entity_data.py" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fillStyle=auto;strokeWidth=2;fontSize=16;fontColor=default;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="225" y="650" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-22" value="离线生成" style="shape=singleArrow;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontSize=16;fontColor=default;fillStyle=auto;gradientColor=none;verticalAlign=bottom;horizontal=1;rotation=45;labelPosition=center;verticalLabelPosition=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="152.93" y="577.93" width="122.25" height="26.23" as="geometry" />
+        </mxCell>
+        <mxCell id="WT8Jvcxxa8tvmrFvjOdX-23" value="mmap访问" style="shape=singleArrow;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontSize=16;fontColor=default;fillStyle=auto;gradientColor=none;verticalAlign=bottom;horizontal=1;rotation=-45;labelPosition=center;verticalLabelPosition=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="384.98" y="580.26" width="125.61" height="33.85" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

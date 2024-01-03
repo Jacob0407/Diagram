@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-03T12:48:37.849Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="zUd4Bg1-iQCFEyOsLvO_" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-03T12:53:14.838Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="M0EBUUJHut021R8sxWzc" version="22.1.16" type="github" pages="2">
   <diagram name="登录相关流程" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="2534" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -372,7 +372,7 @@
         </mxCell>
         <mxCell id="Aw8qEytruY9d0VCpx88Z-83" value="_login / pc&amp;amp;pe通用模块" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Aw8qEytruY9d0VCpx88Z-78" vertex="1" connectable="0">
           <mxGeometry x="0.352" y="5" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-325" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Aw8qEytruY9d0VCpx88Z-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Aw8qEytruY9d0VCpx88Z-79" target="Aw8qEytruY9d0VCpx88Z-84" edge="1">
@@ -489,6 +489,14 @@
         <mxCell id="Aw8qEytruY9d0VCpx88Z-120" value="完成登录" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="5620" width="120" height="80" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uXqK3yY1Y4umyT_qx0ZN" name="数据推送">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>

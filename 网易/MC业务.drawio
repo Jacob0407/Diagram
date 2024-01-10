@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-10T08:16:16.910Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="zt4W7NMOJqMVFQ6bkQ1H" version="22.1.17" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-01-10T08:36:33.806Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="yVg6OO_sA9LXKuUZAp-P" version="22.1.17" type="github" pages="4">
   <diagram name="登录相关流程" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="2493" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -922,7 +922,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="YK0gRD9NroGTAb0yu8ZV-2" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
-          <mxGeometry x="80" y="40" width="930" height="1770" as="geometry">
+          <mxGeometry x="80" y="40" width="1000" height="2120" as="geometry">
             <mxRectangle x="80" y="40" width="50" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1030,8 +1030,8 @@
         <mxCell id="YK0gRD9NroGTAb0yu8ZV-3" value="领取邮件奖励" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-2">
           <mxGeometry x="415" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="YK0gRD9NroGTAb0yu8ZV-40" value="" style="swimlane;startSize=0;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-2">
-          <mxGeometry x="77" y="1250" width="770" height="510" as="geometry" />
+        <mxCell id="YK0gRD9NroGTAb0yu8ZV-40" value="" style="swimlane;startSize=0;fontStyle=0" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-2">
+          <mxGeometry x="77" y="1250" width="870" height="730" as="geometry" />
         </mxCell>
         <mxCell id="YK0gRD9NroGTAb0yu8ZV-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-40" source="YK0gRD9NroGTAb0yu8ZV-41" target="YK0gRD9NroGTAb0yu8ZV-46">
           <mxGeometry relative="1" as="geometry" />
@@ -1039,14 +1039,80 @@
         <mxCell id="YK0gRD9NroGTAb0yu8ZV-41" value="更新某一奖励的领取状态" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-40">
           <mxGeometry x="285.01" y="50" width="205" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YK0gRD9NroGTAb0yu8ZV-46" value="&lt;b&gt;从MailCallback中获取其他依赖系统的奖励&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-40">
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-40" source="YK0gRD9NroGTAb0yu8ZV-46" target="Ckw_XqQsyJsjfF-BEAbZ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YK0gRD9NroGTAb0yu8ZV-46" value="&lt;b&gt;在MailCallback中根据奖励类型发奖励&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-40">
           <mxGeometry x="267.51" y="180" width="239.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-40" source="Ckw_XqQsyJsjfF-BEAbZ-1" target="Ckw_XqQsyJsjfF-BEAbZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-1" value="设置邮件为已读状态" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-40">
+          <mxGeometry x="312.51" y="310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-40" source="Ckw_XqQsyJsjfF-BEAbZ-3" target="Ckw_XqQsyJsjfF-BEAbZ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-11" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ckw_XqQsyJsjfF-BEAbZ-10">
+          <mxGeometry x="0.0716" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-40" source="Ckw_XqQsyJsjfF-BEAbZ-3" target="Ckw_XqQsyJsjfF-BEAbZ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-14" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ckw_XqQsyJsjfF-BEAbZ-13">
+          <mxGeometry x="-0.2286" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-3" value="&lt;b&gt;判断是否是跨平台邮件&lt;/b&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-40">
+          <mxGeometry x="291.26" y="440" width="192.49" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-5" value="进入消息队列&lt;br&gt;&lt;br&gt;CMD_MAIL_PUSH3" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-40">
+          <mxGeometry x="613" y="461.25" width="167" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-40" source="Ckw_XqQsyJsjfF-BEAbZ-12" target="Ckw_XqQsyJsjfF-BEAbZ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-12" value="是否有发送失败的奖励" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-40">
+          <mxGeometry x="306.26" y="600" width="162.49" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-40" source="Ckw_XqQsyJsjfF-BEAbZ-5" target="Ckw_XqQsyJsjfF-BEAbZ-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="703" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-17" value="回滚奖励数据&lt;br&gt;&lt;br&gt;回滚邮件领取状态" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-40">
+          <mxGeometry x="43" y="620" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YK0gRD9NroGTAb0yu8ZV-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-2" source="YK0gRD9NroGTAb0yu8ZV-38" target="YK0gRD9NroGTAb0yu8ZV-41">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YK0gRD9NroGTAb0yu8ZV-44" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YK0gRD9NroGTAb0yu8ZV-43">
           <mxGeometry x="0.2239" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-19" value="done" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="YK0gRD9NroGTAb0yu8ZV-2">
+          <mxGeometry x="415" y="2030" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-2" source="Ckw_XqQsyJsjfF-BEAbZ-12" target="Ckw_XqQsyJsjfF-BEAbZ-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="YK0gRD9NroGTAb0yu8ZV-2" source="YK0gRD9NroGTAb0yu8ZV-38" target="YK0gRD9NroGTAb0yu8ZV-46">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="1150" />
+              <mxPoint x="670" y="1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ckw_XqQsyJsjfF-BEAbZ-22" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ckw_XqQsyJsjfF-BEAbZ-21">
+          <mxGeometry x="0.1153" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>

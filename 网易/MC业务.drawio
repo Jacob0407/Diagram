@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-12T12:37:58.426Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="ngY08cILMZ6QIdo09q6n" version="22.1.17" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-01-12T12:41:07.162Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="SjWfzR1FO9QYJ1tzeZh7" version="22.1.17" type="github" pages="6">
   <diagram name="登录相关流程" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="2493" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -1519,7 +1519,7 @@
           <mxGeometry x="2520" y="38" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lT5DC0j5VgrECtK2Ma7p-1" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
-          <mxGeometry x="3830" y="40" width="890" height="1710" as="geometry" />
+          <mxGeometry x="3830" y="40" width="890" height="1910" as="geometry" />
         </mxCell>
         <mxCell id="lT5DC0j5VgrECtK2Ma7p-3" value="MailLib::check_global_mail" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="lT5DC0j5VgrECtK2Ma7p-1">
           <mxGeometry x="20" width="170" height="30" as="geometry" />
@@ -1643,11 +1643,40 @@
         <mxCell id="lT5DC0j5VgrECtK2Ma7p-40" value="部分邮件进入中转邮箱？" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=0" vertex="1" parent="lT5DC0j5VgrECtK2Ma7p-19">
           <mxGeometry x="337" y="930" width="258" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="lT5DC0j5VgrECtK2Ma7p-42" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="lT5DC0j5VgrECtK2Ma7p-1">
-          <mxGeometry x="446" y="1630" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="lT5DC0j5VgrECtK2Ma7p-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="lT5DC0j5VgrECtK2Ma7p-1" source="lT5DC0j5VgrECtK2Ma7p-40" target="lT5DC0j5VgrECtK2Ma7p-42">
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="lT5DC0j5VgrECtK2Ma7p-1" source="lT5DC0j5VgrECtK2Ma7p-44" target="lT5DC0j5VgrECtK2Ma7p-46">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-51" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lT5DC0j5VgrECtK2Ma7p-47">
+          <mxGeometry x="-0.125" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="lT5DC0j5VgrECtK2Ma7p-1" source="lT5DC0j5VgrECtK2Ma7p-44" target="lT5DC0j5VgrECtK2Ma7p-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-52" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lT5DC0j5VgrECtK2Ma7p-49">
+          <mxGeometry x="-0.4054" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-44" value="是否有全服邮件的更新插入" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="lT5DC0j5VgrECtK2Ma7p-1">
+          <mxGeometry x="406" y="1610" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="lT5DC0j5VgrECtK2Ma7p-1" source="lT5DC0j5VgrECtK2Ma7p-40" target="lT5DC0j5VgrECtK2Ma7p-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-46" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="lT5DC0j5VgrECtK2Ma7p-1">
+          <mxGeometry x="446" y="1800" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-48" value="从中转邮箱中进行查询插入" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="lT5DC0j5VgrECtK2Ma7p-1">
+          <mxGeometry x="660" y="1635" width="161" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="lT5DC0j5VgrECtK2Ma7p-1" source="lT5DC0j5VgrECtK2Ma7p-48" target="lT5DC0j5VgrECtK2Ma7p-46">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="741" y="1830" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

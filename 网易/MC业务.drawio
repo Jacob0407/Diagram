@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-12T12:41:37.231Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="hciswfaMiCrMWmcZ_Q0p" version="22.1.17" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-01-12T12:43:15.878Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="67jYQoSIJfqbskaHXGHj" version="22.1.17" type="github" pages="6">
   <diagram name="登录相关流程" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="2493" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -1430,6 +1430,11 @@
         </mxCell>
         <mxCell id="dbsruVf7g2IISlmiPb4O-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dbsruVf7g2IISlmiPb4O-1" source="dbsruVf7g2IISlmiPb4O-28" target="dbsruVf7g2IISlmiPb4O-37">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lT5DC0j5VgrECtK2Ma7p-53" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dbsruVf7g2IISlmiPb4O-38">
+          <mxGeometry x="-0.275" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dbsruVf7g2IISlmiPb4O-28" value="db操作完成？" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="dbsruVf7g2IISlmiPb4O-1">
           <mxGeometry x="480" y="1120" width="100" height="100" as="geometry" />

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-22T06:32:08.794Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="Cl2cNRzlDEFkiejjeJbj" version="22.1.21" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2024-01-22T06:46:15.547Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="Bdvio6UoNQrpfsC1Wkp1" version="22.1.21" type="github" pages="9">
   <diagram id="ayYempEwn-CeUZWZckHG" name="基础架构">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2082,7 +2082,7 @@
           <mxGeometry x="324" y="930" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daZN-lRAo43xsK6EFrN9-1" value="Gas发货" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1410" y="40" width="1270" height="2880" as="geometry" />
+          <mxGeometry x="-1410" y="40" width="1270" height="3010" as="geometry" />
         </mxCell>
         <mxCell id="daZN-lRAo43xsK6EFrN9-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="daZN-lRAo43xsK6EFrN9-1" source="daZN-lRAo43xsK6EFrN9-2" target="daZN-lRAo43xsK6EFrN9-3">
           <mxGeometry relative="1" as="geometry" />
@@ -2350,7 +2350,7 @@
         <mxCell id="daZN-lRAo43xsK6EFrN9-68" value="返回gas订单处理成功" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="daZN-lRAo43xsK6EFrN9-1">
           <mxGeometry x="307.14" y="2420" width="165" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="daZN-lRAo43xsK6EFrN9-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="daZN-lRAo43xsK6EFrN9-1" source="daZN-lRAo43xsK6EFrN9-72" target="daZN-lRAo43xsK6EFrN9-74">
+        <mxCell id="daZN-lRAo43xsK6EFrN9-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="daZN-lRAo43xsK6EFrN9-1" source="daZN-lRAo43xsK6EFrN9-72" target="daZN-lRAo43xsK6EFrN9-80">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="daZN-lRAo43xsK6EFrN9-72" value="推送CMD_PREPAID_OK数据" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="daZN-lRAo43xsK6EFrN9-1">
@@ -2360,10 +2360,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="daZN-lRAo43xsK6EFrN9-74" value="运营数据记录" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="daZN-lRAo43xsK6EFrN9-1">
-          <mxGeometry x="301.18000000000006" y="2670" width="176.93" height="50" as="geometry" />
+          <mxGeometry x="301.5300000000001" y="2800" width="176.93" height="50" as="geometry" />
         </mxCell>
         <mxCell id="daZN-lRAo43xsK6EFrN9-76" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="daZN-lRAo43xsK6EFrN9-1">
-          <mxGeometry x="339.6500000000001" y="2790" width="100" height="60" as="geometry" />
+          <mxGeometry x="340.0000000000001" y="2920" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daZN-lRAo43xsK6EFrN9-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="daZN-lRAo43xsK6EFrN9-1" source="daZN-lRAo43xsK6EFrN9-80" target="daZN-lRAo43xsK6EFrN9-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="daZN-lRAo43xsK6EFrN9-80" value="请求core服进行道具结算发放&lt;br&gt;request_web_server_prepaid_ship" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="daZN-lRAo43xsK6EFrN9-1">
+          <mxGeometry x="279.6300000000001" y="2660" width="220" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

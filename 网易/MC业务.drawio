@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T12:35:21.036Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="58OuVkSr4vZkaRC6PhtO" version="23.1.1" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2024-03-16T08:40:41.163Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="0MHZc-ApS_6maxADS2Ue" version="23.1.5" type="github" pages="12">
   <diagram id="ayYempEwn-CeUZWZckHG" name="基础架构">
-    <mxGraphModel dx="880" dy="452" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1120,6 +1120,226 @@
         </mxCell>
         <mxCell id="jAMDDy1rGe5oFDTubnvM-3" value="登录后处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="2190" y="848" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="vO4D6y-eXJfj1izln3hu" name="租赁服相关">
+    <mxGraphModel dx="2261" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-1" value="玩家进服" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-180" y="30" width="1090" height="2260" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-2" target="p3UIPT-9csc1mw2zQTyY-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-2" value="client" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="315" y="60" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-3" target="p3UIPT-9csc1mw2zQTyY-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-3" value="WebServer&lt;br&gt;/rental-server-world-enter/get" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="270" y="200" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-5" target="p3UIPT-9csc1mw2zQTyY-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-5" value="根据sid从server表中查询对应服务器配置" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=0" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="250" y="330" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-7" target="p3UIPT-9csc1mw2zQTyY-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-7" value="对玩家各种基础条件过滤判断&lt;br&gt;比如密码、等级、黑名单" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="270" y="460" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-9" target="p3UIPT-9csc1mw2zQTyY-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-25" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-24" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-9" target="p3UIPT-9csc1mw2zQTyY-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="640" />
+              <mxPoint x="130" y="1030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-34" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-33" vertex="1" connectable="0">
+          <mxGeometry x="0.0021" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-9" value="服务器类型是否为docker_v2" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="297.5" y="590" width="135" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-14" target="p3UIPT-9csc1mw2zQTyY-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-14" value="根据租赁服类型从对应的docker容器池获取可用容器id" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="666" y="815" width="165" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-17" target="p3UIPT-9csc1mw2zQTyY-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-17" value="绑定容器&lt;br&gt;插入容器id到不可用容器池" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="666" y="930" width="164" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-19" target="p3UIPT-9csc1mw2zQTyY-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-19" value="插入异步等待任务，等待容器初始化开服完成&lt;br&gt;insertRentalServerAsyncMsg" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="622.25" y="1060" width="252.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-21" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="698.5" y="1180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-23" target="p3UIPT-9csc1mw2zQTyY-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-27" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-26" vertex="1" connectable="0">
+          <mxGeometry x="-0.0576" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-23" target="p3UIPT-9csc1mw2zQTyY-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-32" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-31" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-23" value="是否已经绑定容器&lt;br&gt;（根据db里面的world_id字段判断&lt;span style=&quot;background-color: initial;&quot;&gt;）&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontStyle=0" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="255" y="790" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-30" target="p3UIPT-9csc1mw2zQTyY-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-30" value="从realms平台获取游戏服信息&lt;br&gt;&lt;a href=&quot;https://mcrealms.entrance.nie.netease.com/platform/docs/817&quot;&gt;get_world_info&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;主要获取MCServer的状态、ip、port&lt;br&gt;GameWrapper的ip和port&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="251.25" y="980" width="223.75" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-35" target="p3UIPT-9csc1mw2zQTyY-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-35" value="更新服务器状态数据表&lt;br&gt;switchRentalServer" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="280.63" y="1180" width="165" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-37" target="p3UIPT-9csc1mw2zQTyY-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-1" value="已经开服" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-56" vertex="1" connectable="0">
+          <mxGeometry x="-0.0667" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-37" value="判断服务端状态" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="306.5" y="1330" width="115" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-45" value="客户端轮询等待开服" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="40" y="1530" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-37" target="p3UIPT-9csc1mw2zQTyY-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-47" value="容器不可用/正在开启容器" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-46" vertex="1" connectable="0">
+          <mxGeometry x="-0.2006" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-49" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="566" y="1530" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-37" target="p3UIPT-9csc1mw2zQTyY-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-51" value="其余状态" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-50" vertex="1" connectable="0">
+          <mxGeometry x="-0.4746" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-55" target="p3UIPT-9csc1mw2zQTyY-57" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-55" value="插入当前玩家信息到server_player表" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="264.31" y="1535" width="199.37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-57" target="p3UIPT-9csc1mw2zQTyY-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-61" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-60" vertex="1" connectable="0">
+          <mxGeometry x="-0.1022" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-57" target="W9Vf9mPlDZWGMee0Xb2B-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="1740" />
+              <mxPoint x="630" y="2045" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-8" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="W9Vf9mPlDZWGMee0Xb2B-7" vertex="1" connectable="0">
+          <mxGeometry x="0.0994" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-57" value="服务器类型是否为docker_v2" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="295.63" y="1690" width="135" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-59" target="W9Vf9mPlDZWGMee0Xb2B-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3UIPT-9csc1mw2zQTyY-59" value="添加玩家名称到mcserver白名单中&lt;br&gt;&lt;br&gt;&lt;b&gt;调用的是GameWrapper的whitelist方法&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="250.81" y="1870" width="226.37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-3" value="返回服务端ip、port、网络信息等" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="285.63" y="2170" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="W9Vf9mPlDZWGMee0Xb2B-4" target="W9Vf9mPlDZWGMee0Xb2B-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-4" value="根据配置的isp_ratio概率决定是否使用三线" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
+          <mxGeometry x="236.5" y="2020" width="255" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="sEl1h0MJtTMXk5ZD8PRe" name="MC主城">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BkCyVyqDe3Jn83iqfaBB-22" value="main_city_process" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=1;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_mysql_instance_alt;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="109" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="BkCyVyqDe3Jn83iqfaBB-25" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.elasticache_for_redis;" vertex="1" parent="1">
+          <mxGeometry x="520" y="381" width="123.22" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="BkCyVyqDe3Jn83iqfaBB-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;" edge="1" parent="1" source="BkCyVyqDe3Jn83iqfaBB-32" target="BkCyVyqDe3Jn83iqfaBB-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BkCyVyqDe3Jn83iqfaBB-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BkCyVyqDe3Jn83iqfaBB-32" target="BkCyVyqDe3Jn83iqfaBB-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BkCyVyqDe3Jn83iqfaBB-36" value="从redis" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BkCyVyqDe3Jn83iqfaBB-35">
+          <mxGeometry x="-0.055" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BkCyVyqDe3Jn83iqfaBB-32" value="main_city_docker_manager.py" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.script_file;pointerEvents=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="100" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BkCyVyqDe3Jn83iqfaBB-33" value="main_city_process.py" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.script_file;pointerEvents=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="500" y="100" width="120" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -2954,195 +3174,6 @@
           <mxGeometry x="-0.0933" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="vO4D6y-eXJfj1izln3hu" name="租赁服相关">
-    <mxGraphModel dx="2261" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-1" value="玩家进服" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-180" y="30" width="1090" height="2260" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-2" target="p3UIPT-9csc1mw2zQTyY-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-2" value="client" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="315" y="60" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-3" target="p3UIPT-9csc1mw2zQTyY-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-3" value="WebServer&lt;br&gt;/rental-server-world-enter/get" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="270" y="200" width="190" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-5" target="p3UIPT-9csc1mw2zQTyY-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-5" value="根据sid从server表中查询对应服务器配置" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=0" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="250" y="330" width="230" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-7" target="p3UIPT-9csc1mw2zQTyY-9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-7" value="对玩家各种基础条件过滤判断&lt;br&gt;比如密码、等级、黑名单" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="270" y="460" width="190" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-9" target="p3UIPT-9csc1mw2zQTyY-23" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-25" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-24" vertex="1" connectable="0">
-          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-9" target="p3UIPT-9csc1mw2zQTyY-30" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="130" y="640" />
-              <mxPoint x="130" y="1030" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-34" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-33" vertex="1" connectable="0">
-          <mxGeometry x="0.0021" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-9" value="服务器类型是否为docker_v2" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="297.5" y="590" width="135" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-14" target="p3UIPT-9csc1mw2zQTyY-17" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-14" value="根据租赁服类型从对应的docker容器池获取可用容器id" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="666" y="815" width="165" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-17" target="p3UIPT-9csc1mw2zQTyY-19" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-17" value="绑定容器&lt;br&gt;插入容器id到不可用容器池" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="666" y="930" width="164" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-19" target="p3UIPT-9csc1mw2zQTyY-21" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-19" value="插入异步等待任务，等待容器初始化开服完成&lt;br&gt;insertRentalServerAsyncMsg" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="622.25" y="1060" width="252.5" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-21" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="698.5" y="1180" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-23" target="p3UIPT-9csc1mw2zQTyY-14" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-27" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-26" vertex="1" connectable="0">
-          <mxGeometry x="-0.0576" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-23" target="p3UIPT-9csc1mw2zQTyY-30" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-32" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-31" vertex="1" connectable="0">
-          <mxGeometry x="-0.2" y="-4" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-23" value="是否已经绑定容器&lt;br&gt;（根据db里面的world_id字段判断&lt;span style=&quot;background-color: initial;&quot;&gt;）&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontStyle=0" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="255" y="790" width="220" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-30" target="p3UIPT-9csc1mw2zQTyY-35" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-30" value="从realms平台获取游戏服信息&lt;br&gt;&lt;a href=&quot;https://mcrealms.entrance.nie.netease.com/platform/docs/817&quot;&gt;get_world_info&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;主要获取MCServer的状态、ip、port&lt;br&gt;GameWrapper的ip和port&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="251.25" y="980" width="223.75" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-35" target="p3UIPT-9csc1mw2zQTyY-37" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-35" value="更新服务器状态数据表&lt;br&gt;switchRentalServer" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="280.63" y="1180" width="165" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-37" target="p3UIPT-9csc1mw2zQTyY-55" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-1" value="已经开服" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-56" vertex="1" connectable="0">
-          <mxGeometry x="-0.0667" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-37" value="判断服务端状态" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="306.5" y="1330" width="115" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-45" value="客户端轮询等待开服" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="40" y="1530" width="155" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-37" target="p3UIPT-9csc1mw2zQTyY-45" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-47" value="容器不可用/正在开启容器" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-46" vertex="1" connectable="0">
-          <mxGeometry x="-0.2006" y="3" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-49" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="566" y="1530" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-37" target="p3UIPT-9csc1mw2zQTyY-49" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-51" value="其余状态" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-50" vertex="1" connectable="0">
-          <mxGeometry x="-0.4746" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-55" target="p3UIPT-9csc1mw2zQTyY-57" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-55" value="插入当前玩家信息到server_player表" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="264.31" y="1535" width="199.37" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-57" target="p3UIPT-9csc1mw2zQTyY-59" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-61" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="p3UIPT-9csc1mw2zQTyY-60" vertex="1" connectable="0">
-          <mxGeometry x="-0.1022" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-57" target="W9Vf9mPlDZWGMee0Xb2B-4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="630" y="1740" />
-              <mxPoint x="630" y="2045" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-8" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="W9Vf9mPlDZWGMee0Xb2B-7" vertex="1" connectable="0">
-          <mxGeometry x="0.0994" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-57" value="服务器类型是否为docker_v2" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="295.63" y="1690" width="135" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="p3UIPT-9csc1mw2zQTyY-59" target="W9Vf9mPlDZWGMee0Xb2B-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p3UIPT-9csc1mw2zQTyY-59" value="添加玩家名称到mcserver白名单中&lt;br&gt;&lt;br&gt;&lt;b&gt;调用的是GameWrapper的whitelist方法&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="250.81" y="1870" width="226.37" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-3" value="返回服务端ip、port、网络信息等" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontStyle=1" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="285.63" y="2170" width="155" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="p3UIPT-9csc1mw2zQTyY-1" source="W9Vf9mPlDZWGMee0Xb2B-4" target="W9Vf9mPlDZWGMee0Xb2B-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="W9Vf9mPlDZWGMee0Xb2B-4" value="根据配置的isp_ratio概率决定是否使用三线" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="p3UIPT-9csc1mw2zQTyY-1" vertex="1">
-          <mxGeometry x="236.5" y="2020" width="255" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
